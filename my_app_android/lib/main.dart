@@ -9,9 +9,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Hello World App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.lightGreen,
       ),
-      home: Text("Hello World"),
+      home: const MyHomePage(title: "CINS 467 Hello World"),
     );
   }
 }
