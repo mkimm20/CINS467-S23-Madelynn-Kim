@@ -9,9 +9,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Hello World App',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        //Theme of application
+        primarySwatch: Colors.lightGreen,
       ),
-      home: Text("Hello World"),
+      home: const MyHomePage(title: 'CINS 467 Hello World'),
     );
   }
 }
@@ -83,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'You have pushed the button this many times:',
+              'You have clicked the button this many times:',
             ),
             Text(
               '$_counter',
